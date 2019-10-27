@@ -36,6 +36,25 @@ public class Monitoring {
     }
 
     /**
+     * return the largest magnitude earthquake ever recorded
+     * @return Earthquake
+     */
+    public Earthquake largestEQ(){
+        if (observatoryList.size()==0) return null;
+        float ma = 0f;
+        Earthquake eq = null;
+        for (Observatory observatory:observatoryList){
+            if (observatory.largestMaEQ()!=null){
+                if (ma<observatory.largestMaEQ().getMagnitude()){
+                    ma = observatory.largestMaEQ().getMagnitude();
+                    eq = observatory.largestMaEQ();
+                }
+            }
+        }
+        return eq;
+    }
+
+    /**
      * return list of earthquakes with magnitude greater than a given number
      * @param m the given number
      * @return List
@@ -176,17 +195,7 @@ public class Monitoring {
                 statics();
                 break;
             case "2":
-                float ma = 0f;
-                Earthquake eq = null;
-                for (Observatory observatory:observatoryList){
-                    if (observatory.largestMaEQ()!=null){
-                        if (ma<observatory.largestMaEQ().getMagnitude()){
-                            ma = observatory.largestMaEQ().getMagnitude();
-                            eq = observatory.largestMaEQ();
-                        }
-                    }
-                }
-                System.out.println(eq);
+                System.out.println(largestEQ());
                 statics();
                 break;
             case "3":

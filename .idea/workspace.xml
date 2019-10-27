@@ -74,7 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AI">
+  <component name="RunManager" selected="Application.MonitoringIO">
     <configuration name="AI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="coursewrok.AI" />
       <module name="test" />
@@ -143,8 +143,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AI" />
         <item itemvalue="Application.MonitoringIO" />
+        <item itemvalue="Application.AI" />
         <item itemvalue="JUnit.MonitoringTest" />
         <item itemvalue="JUnit.ObservatoryTest" />
         <item itemvalue="JUnit.ObservatoryTest.averageMa" />
@@ -178,6 +178,8 @@
       <workItem from="1572006104511" duration="170000" />
       <workItem from="1572006179211" duration="619000" />
       <workItem from="1572007053561" duration="2732000" />
+      <workItem from="1572167833241" duration="599000" />
+      <workItem from="1572205284549" duration="424000" />
     </task>
     <servers />
   </component>
